@@ -4,8 +4,10 @@
       <!-- Cabeçalho -->
       <header class="header-fullscreen text-center">
         <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
-          <v-img class="mt-4" width="500px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
-          <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
+          <v-img class="mt-4 responsive-image" contain src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
+          <div class="mx-2">
+            <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
+          </div>
         </v-card>
       </header>
     </v-container>
@@ -268,5 +270,16 @@ export default {
   background-color: #F5F5F5;
 }
 
+/* Estilo padrão para desktop */
+.responsive-image {
+  width: 500px;
+}
+
+/* Estilo para telas menores (por exemplo, abaixo de 600px) */
+@media (max-width: 600px) {
+  .responsive-image {
+    width: 300px; /* ou o tamanho que você desejar para dispositivos móveis */
+  }
+}
 </style>
 
