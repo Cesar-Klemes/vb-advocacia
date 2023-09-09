@@ -69,7 +69,7 @@
             <v-col cols="12" md="4" class="d-flex">
               <v-card class="d-flex flex-column justify-center">
                 <v-card-title class="d-flex flex-column align-center">
-                  <v-icon size="100px">mdi-image</v-icon>
+                  <v-img max-width="100px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo1.png"/>
                   <h2 class="my-6">Informações</h2>
                 </v-card-title>
                 <v-card-text class="d-flex align-center mx-2 mt-n3">
