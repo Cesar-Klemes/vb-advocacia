@@ -4,7 +4,7 @@
       <!-- Cabeçalho -->
       <header class="header-fullscreen text-center">
         <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
-          <v-icon size="150px">mdi-image</v-icon>
+          <v-img width="500px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
           <h1 class="display-2">VB Advogados</h1>
           <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
         </v-card>
