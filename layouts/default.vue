@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <v-app-bar app color="accent" dark>
-      <v-toolbar-title>VB Advogados</v-toolbar-title>
+      <v-img max-width="50px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo1.png"/>
+      <v-toolbar-title class="ml-3">Advogados</v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- Botão de menu (ícone de hambúrguer) para visualização mobile -->
       <v-btn icon @click.stop="drawer = !drawer" class="d-flex d-sm-none">
