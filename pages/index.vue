@@ -3,20 +3,22 @@
     <v-container fluid class="container-background">
       <v-container>
         <!-- Cabeçalho -->
-        <header class="header-fullscreen text-center">
-          <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
-            <v-img class="mt-4 responsive-image" contain src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
-            <div class="mx-2">
-              <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
-            </div>
-          </v-card>
-        </header>
+        <section id="inicio">
+          <header class="header-fullscreen text-center">
+            <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+              <v-img class="mt-4 responsive-image" contain src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
+              <div class="mx-2">
+                <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
+              </div>
+            </v-card>
+          </header>
+        </section>
       </v-container>
 
       <v-container fluid style="background-color: white; color: black; border-top-left-radius: 20px; border-top-right-radius: 20px">
         <v-container>
           <!-- Sobre nós -->
-          <section v-aos="'fade-up'" class="my-10">
+          <section v-aos="'fade-up'" class="my-10" id="sobre">
             <h2 class="text-h4">Sobre nós</h2>
             <v-divider class="grey my-8"/>
             <v-row>
@@ -35,7 +37,7 @@
       <v-container fluid style="background-color: #212121">
         <v-container>
           <!-- Perguntas Frequentes -->
-          <section v-aos="'fade-up'" class="my-10">
+          <section v-aos="'fade-up'" class="my-10" id="perguntas">
             <h2 class="text-h4 mb-5">Perguntas Frequentes</h2>
             <v-divider class="mb-5"/>
             <v-expansion-panels>
@@ -67,7 +69,7 @@
       <v-container fluid style="background-color: white; color: black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
         <v-container>
           <!-- Contatos -->
-          <section v-aos="'fade-up'" class="my-10">
+          <section v-aos="'fade-up'" class="my-10" id="contatos">
             <v-row align="stretch">
               <v-col cols="12" md="4" class="d-flex">
                 <v-card class="d-flex flex-column justify-center" style="border-radius: 10px">
@@ -171,10 +173,10 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col>
+          <v-col cols="12" md="6">
             <p>&copy; 2023 VB Advogados. Todos os direitos reservados.</p>
           </v-col>
-          <v-col class="text-end">
+          <v-col class="text-end mr-1">
             Desenvolvido por <a :href="'https://www.linkedin.com/in/cesar-klemes/'" target="_blank" class="align-center mt-3 text-decoration-none white--text"><span style="font-weight: bold">Cesar Klemes</span></a>
           </v-col>
         </v-row>

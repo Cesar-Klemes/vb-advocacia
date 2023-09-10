@@ -10,26 +10,26 @@
       </v-btn>
 
       <!-- Itens de menu para visualização desktop -->
-      <v-btn text to="/" class="d-none d-sm-flex">Início</v-btn>
-      <v-btn text to="/contatos" class="d-none d-sm-flex">Contatos</v-btn>
-      <v-btn text to="/menu" class="d-none d-sm-flex">Menu</v-btn>
-      <v-btn text to="/redes" class="d-none d-sm-flex">Redes</v-btn>
+      <v-btn text @click="scrollToSection('inicio')" class="d-none d-sm-flex">Início</v-btn>
+      <v-btn text @click="scrollToSection('sobre')" class="d-none d-sm-flex">Sobre nós</v-btn>
+      <v-btn text @click="scrollToSection('perguntas')" class="d-none d-sm-flex">Perguntas</v-btn>
+      <v-btn text @click="scrollToSection('contatos')" class="d-none d-sm-flex">Contatos</v-btn>
     </v-app-bar>
 
     <!-- Menu lateral para visualização mobile -->
     <v-navigation-drawer v-model="drawer" app temporary right>
       <v-list>
-        <v-list-item @click="drawer = false" to="/">
+        <v-list-item @click="drawer = false; scrollToSection('inicio')">
           <v-list-item-content>Início</v-list-item-content>
         </v-list-item>
-        <v-list-item @click="drawer = false" to="/contatos">
+        <v-list-item @click="drawer = false; scrollToSection('sobre')">
+          <v-list-item-content>Sobre nós</v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="drawer = false; scrollToSection('perguntas')">
+          <v-list-item-content>Perguntas</v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="drawer = false; scrollToSection('contatos')">
           <v-list-item-content>Contatos</v-list-item-content>
-        </v-list-item>
-        <v-list-item @click="drawer = false" to="/menu">
-          <v-list-item-content>Menu</v-list-item-content>
-        </v-list-item>
-        <v-list-item @click="drawer = false" to="/redes">
-          <v-list-item-content>Redes</v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -49,6 +49,23 @@ export default {
     return {
       drawer: false
     }
+  },
+  methods: {
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      let yOffset = -120
+      if (sectionId === 'inicio') {
+        yOffset = 0;
+      }
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 }
 </script>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
