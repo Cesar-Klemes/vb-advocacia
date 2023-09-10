@@ -83,7 +83,11 @@
                   </v-card-text>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-gmail</v-icon>
-                    <span class="ml-2">vandeilsonbarbosa@adv.oabsp.org.br</span>
+                    <span class="ml-2">
+                      <a class="map-link" href="mailto:vandeilsonbarbosa@adv.oabsp.org.br?subject=Contato via Website" target="_blank">
+                        vandeilsonbarbosa@adv.oabsp.org.br
+                      </a>
+                    </span>
                   </v-card-text>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-google-maps</v-icon>
@@ -360,12 +364,12 @@ export default {
 
 .map-link,
 .map-link:visited {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
 }
 
 .map-link:hover {
-  color: #007BFF;
+  color: #007BFF !important;
   text-decoration: underline;
 }
 </style>
