@@ -1,5 +1,5 @@
 <template>
-  <v-card class="d-flex flex-column justify-center" style="border-radius: 10px">
+  <v-card class="d-flex flex-column justify-center" style="border-radius: 10px; background-color: #0c2c43">
     <v-card-title class="d-flex flex-column align-center">
       <v-img max-width="100px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo1.png"/>
       <h2 class="my-6">Informações</h2>

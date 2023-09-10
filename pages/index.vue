@@ -5,7 +5,7 @@
         <!-- Cabeçalho -->
         <section id="inicio">
           <header class="header-fullscreen text-center">
-            <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+            <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(12, 44, 67, 0.7); width: 100%;">
               <v-img class="mt-4 responsive-image" contain src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
               <div class="mx-2">
                 <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
@@ -24,7 +24,7 @@
         </v-container>
       </v-container>
 
-      <v-container fluid style="background-color: #212121">
+      <v-container fluid style="background-color: #0c2c43">
         <v-container>
           <!-- Perguntas Frequentes -->
           <section v-aos="'fade-up'" class="my-10" id="perguntas">

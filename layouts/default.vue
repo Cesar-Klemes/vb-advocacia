@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="accent" dark>
+    <v-app-bar app color="#0c2c43" dark>
       <v-img max-width="50px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo1.png"/>
       <v-toolbar-title class="ml-3">Advogados</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -17,7 +17,7 @@
     </v-app-bar>
 
     <!-- Menu lateral para visualização mobile -->
-    <v-navigation-drawer v-model="drawer" app temporary right>
+    <v-navigation-drawer v-model="drawer" app temporary right color="#0c2c43">
       <v-list>
         <v-list-item @click="drawer = false; scrollToSection('inicio')">
           <v-list-item-content>Início</v-list-item-content>

@@ -56,7 +56,7 @@
       ></v-textarea>
 
       <!-- Botão de Envio -->
-      <v-btn @click="enviarFormulario">Enviar</v-btn>
+      <v-btn @click="enviarFormulario" color="#0c2c43">Enviar</v-btn>
     </v-form>
   </div>
 </template>
