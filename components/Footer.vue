@@ -2,8 +2,11 @@
   <div>
     <v-row>
       <v-col>
-        <h3>SOBRE</h3>
-        <p class="mt-3">Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+
+      </v-col>
+      <v-col>
+        <h3>Sobre Dr. Vandeilson Barbosa</h3>
+        <p class="mt-3">O Dr. Vandeilson Barbosa é um advogado altamente qualificado, devidamente registrado na OAB/SP com o número 463.639. Além de sua formação em Direito, ele possui uma pós-graduação em Advocacia Cível pela ESA - Escola Superior da Advocacia. Com especialização em Direito do Consumidor Bancário, ele está dedicado a oferecer aos seus clientes uma representação jurídica confiável e de alta qualidade.</p>
       </v-col>
     </v-row>
     <v-row>
