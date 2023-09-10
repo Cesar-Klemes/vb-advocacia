@@ -12,17 +12,17 @@
       </header>
     </v-container>
 
-    <v-container fluid style="background-color: white; color: black">
+    <v-container fluid style="background-color: white; color: black; border-top-left-radius: 20px; border-top-right-radius: 20px">
       <v-container>
         <!-- Sobre nós -->
-        <section v-aos="'fade-up'" class="my-10">
-          <h2 class="text-h4">Sobre nós</h2>
-          <v-divider class="grey my-8"/>
+        <section class="my-10">
+          <h2 v-aos="'fade-down'" class="text-h4">Sobre nós</h2>
+          <v-divider v-aos="'fade-down'" class="grey my-8"/>
           <v-row>
             <v-col cols="12" md="6">
-              <v-img src="https://mfmiller.adv.br/wp-content/uploads/2019/04/Design-sem-nome-2.png" class="rounded"/>
+              <v-img v-aos="'fade-right'" src="https://mfmiller.adv.br/wp-content/uploads/2019/04/Design-sem-nome-2.png" class="rounded"/>
             </v-col>
-            <v-col>
+            <v-col v-aos="'fade-left'">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta consectetur lectus, vel viverra nisl sagittis sit amet. Integer ultricies porta tortor, ac elementum magna fermentum ac. Sed eget lobortis elit. Phasellus sit amet bibendum nunc, ut mollis sem. Duis mattis enim ante, sit amet malesuada purus vulputate et. Mauris at dolor diam. Donec scelerisque faucibus odio sed eleifend. Aliquam sagittis vulputate enim, et mollis enim. Pellentesque pellentesque dapibus cursus. Duis egestas sapien sit amet tellus imperdiet, luctus tincidunt ante semper. Sed eu euismod justo.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta consectetur lectus, vel viverra nisl sagittis sit amet. Integer ultricies porta tortor, ac elementum magna fermentum ac. Sed eget lobortis elit. Phasellus sit amet bibendum nunc, ut mollis sem. Duis mattis enim ante, sit amet malesuada purus vulputate et. Mauris at dolor diam. Donec scelerisque faucibus odio sed eleifend.</p>
             </v-col>
@@ -66,9 +66,9 @@
     <v-container fluid style="background-color: white; color: black">
       <v-container>
         <!-- Contatos -->
-        <section v-aos="'fade-up'" class="my-10">
+        <section class="my-10">
           <v-row align="stretch">
-            <v-col cols="12" md="4" class="d-flex">
+            <v-col v-aos="'fade-right'" cols="12" md="4" class="d-flex">
               <v-card class="d-flex flex-column justify-center">
                 <v-card-title class="d-flex flex-column align-center">
                   <v-img max-width="100px" src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo1.png"/>
@@ -88,7 +88,7 @@
                 </v-card-text>
               </v-card>
             </v-col>
-            <v-col>
+            <v-col v-aos="'fade-left'">
               <h2 class="text-h4 mb-5">Contatos</h2>
               <v-form>
                 <!-- Campo Nome -->
@@ -157,7 +157,17 @@
 </template>
 
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
+  mounted() {
+    this.$nextTick(() => {
+      AOS.init({
+        duration: 1200
+      })
+    });
+  },
   directives: {
     aos(el, binding) {
       el.setAttribute('data-aos', binding.value)
