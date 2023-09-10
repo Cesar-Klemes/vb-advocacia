@@ -79,15 +79,19 @@
                   </v-card-title>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-phone</v-icon>
-                    <span class="ml-2">(11) 9 9999-9999</span>
+                    <span class="ml-2">(11) 9 4151-8775</span>
                   </v-card-text>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-gmail</v-icon>
-                    <span class="ml-2">email.example@gmail.com</span>
+                    <span class="ml-2">vandeilsonbarbosa@adv.oabsp.org.br</span>
                   </v-card-text>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-google-maps</v-icon>
-                    <span class="ml-2">Rua Exemplo, 123, Parque exemplo - Cidade/SP - CEP 00000-000</span>
+                    <span class="ml-2">
+                      <a class="map-link" :href="googleMapsURL" target="_blank">
+                        Rua Olavo Bilac, 884, Jardim Magalhães - Francisco Morato/SP - CEP 07914-060
+                      </a>
+                    </span>
                   </v-card-text>
                 </v-card>
               </v-col>
@@ -228,7 +232,8 @@ export default {
         const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
         return pattern.test(value) || 'E-mail inválido.'
       }
-    }
+    },
+    googleMapsURL: "https://www.google.com/maps/search/?api=1&query=Rua+Olavo+Bilac,+884,+Jardim+Magalhães+-+Francisco+Morato/SP+-+CEP+07914-060"
   }),
   methods: {
     enviarFormulario() {
@@ -351,6 +356,17 @@ export default {
   .responsive-image {
     width: 300px; /* ou o tamanho que você desejar para dispositivos móveis */
   }
+}
+
+.map-link,
+.map-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  color: #007BFF;
+  text-decoration: underline;
 }
 </style>
 
