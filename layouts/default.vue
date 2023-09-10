@@ -12,6 +12,7 @@
       <!-- Itens de menu para visualização desktop -->
       <v-btn text @click="scrollToSection('inicio')" class="d-none d-sm-flex">Início</v-btn>
       <v-btn text @click="scrollToSection('sobre')" class="d-none d-sm-flex">Sobre nós</v-btn>
+      <v-btn text @click="scrollToSection('servicos')" class="d-none d-sm-flex">Serviços</v-btn>
       <v-btn text @click="scrollToSection('perguntas')" class="d-none d-sm-flex">Perguntas</v-btn>
       <v-btn text @click="scrollToSection('contatos')" class="d-none d-sm-flex">Contatos</v-btn>
     </v-app-bar>
@@ -24,6 +25,9 @@
         </v-list-item>
         <v-list-item @click="drawer = false; scrollToSection('sobre')">
           <v-list-item-content>Sobre nós</v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="drawer = false; scrollToSection('servicos')">
+          <v-list-item-content>Serviços</v-list-item-content>
         </v-list-item>
         <v-list-item @click="drawer = false; scrollToSection('perguntas')">
           <v-list-item-content>Perguntas</v-list-item-content>
