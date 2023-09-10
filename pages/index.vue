@@ -49,6 +49,9 @@
         </v-container>
       </v-container>
     </v-container>
+
+    <Whatsapp/>
+
     <!-- Rodapé -->
     <v-footer class="ma-0 pa-0" style="width: 100%; background-color: #212121;">
       <v-container class="mt-4">
@@ -65,6 +68,7 @@ import Perguntas from '~/components/Perguntas.vue'
 import Informacoes from '~/components/Informacoes.vue'
 import Formulario from "~/components/Formulario.vue"
 import Footer from "~/components/Footer.vue"
+import Whatsapp from "~/components/Whatsapp.vue"
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -90,7 +94,8 @@ export default {
     Perguntas,
     Informacoes,
     Formulario,
-    Footer
+    Footer,
+    Whatsapp
   }
 }
 </script>
