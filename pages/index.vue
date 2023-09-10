@@ -45,13 +45,13 @@
       <v-container fluid style="background-color: #0c2c43; color: black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
         <v-container>
           <!-- Contatos -->
-          <section v-aos="'fade-up'" class="my-10" id="contatos">
+          <section v-aos="'fade-up'" class="my-10" id="depoimentos">
             <v-row align="stretch">
               <v-col cols="12" md="4" class="d-flex">
                 <Informacoes/>
               </v-col>
               <v-col>
-                <Formulario/>
+                <Depoimentos/>
               </v-col>
             </v-row>
           </section>
@@ -75,10 +75,10 @@
 import Sobre from '~/components/Sobre.vue'
 import Perguntas from '~/components/Perguntas.vue'
 import Informacoes from '~/components/Informacoes.vue'
-import Formulario from "~/components/Formulario.vue"
 import Footer from "~/components/Footer.vue"
 import Whatsapp from "~/components/Whatsapp.vue"
 import Servicos from "~/components/Servicos.vue"
+import Depoimentos from "~/components/Depoimentos.vue"
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -103,10 +103,10 @@ export default {
     Sobre,
     Perguntas,
     Informacoes,
-    Formulario,
     Footer,
     Whatsapp,
-    Servicos
+    Servicos,
+    Depoimentos
   }
 }
 </script>

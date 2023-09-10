@@ -14,7 +14,7 @@
       <v-btn text @click="scrollToSection('sobre')" class="d-none d-sm-flex">Sobre nós</v-btn>
       <v-btn text @click="scrollToSection('servicos')" class="d-none d-sm-flex">Serviços</v-btn>
       <v-btn text @click="scrollToSection('perguntas')" class="d-none d-sm-flex">Perguntas</v-btn>
-      <v-btn text @click="scrollToSection('contatos')" class="d-none d-sm-flex">Contatos</v-btn>
+      <v-btn text @click="scrollToSection('depoimentos')" class="d-none d-sm-flex">Depoimentos</v-btn>
     </v-app-bar>
 
     <!-- Menu lateral para visualização mobile -->
@@ -32,8 +32,8 @@
         <v-list-item @click="drawer = false; scrollToSection('perguntas')">
           <v-list-item-content>Perguntas</v-list-item-content>
         </v-list-item>
-        <v-list-item @click="drawer = false; scrollToSection('contatos')">
-          <v-list-item-content>Contatos</v-list-item-content>
+        <v-list-item @click="drawer = false; scrollToSection('depoimentos')">
+          <v-list-item-content>Depoimentos</v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
