@@ -79,7 +79,11 @@
                   </v-card-title>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-phone</v-icon>
-                    <span class="ml-2">(11) 9 4151-8775</span>
+                    <span class="ml-2">
+                      <a class="map-link" href="tel:+5511941518775">
+                        (11) 9 4151-8775
+                      </a>
+                    </span>
                   </v-card-text>
                   <v-card-text class="d-flex align-center mx-2 mt-n3">
                     <v-icon>mdi-gmail</v-icon>
