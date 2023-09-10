@@ -26,6 +26,15 @@
 
       <v-container fluid style="background-color: #0c2c43">
         <v-container>
+          <!-- Serviços -->
+          <section v-aos="'fade-up'" class="my-10" id="servicos">
+            <Servicos/>
+          </section>
+        </v-container>
+      </v-container>
+
+      <v-container fluid style="background-color: white; color: black">
+        <v-container>
           <!-- Perguntas Frequentes -->
           <section v-aos="'fade-up'" class="my-10" id="perguntas">
             <Perguntas/>
@@ -33,7 +42,7 @@
         </v-container>
       </v-container>
 
-      <v-container fluid style="background-color: white; color: black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
+      <v-container fluid style="background-color: #0c2c43; color: black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
         <v-container>
           <!-- Contatos -->
           <section v-aos="'fade-up'" class="my-10" id="contatos">
@@ -69,6 +78,7 @@ import Informacoes from '~/components/Informacoes.vue'
 import Formulario from "~/components/Formulario.vue"
 import Footer from "~/components/Footer.vue"
 import Whatsapp from "~/components/Whatsapp.vue"
+import Servicos from "~/components/Servicos.vue"
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -95,7 +105,8 @@ export default {
     Informacoes,
     Formulario,
     Footer,
-    Whatsapp
+    Whatsapp,
+    Servicos
   }
 }
 </script>

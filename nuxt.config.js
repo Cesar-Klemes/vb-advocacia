@@ -24,6 +24,10 @@ export default {
     'aos/dist/aos.css'
   ],
 
+  server: {
+    host: '0.0.0.0'
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
