@@ -1,5 +1,5 @@
 
-# Nome do Projeto (substitua por um nome específico se houver)
+# VB Advogados
 
 Uma Landing Page focada na apresentação de serviços de Advocacia, permitindo aos visitantes conhecer os serviços oferecidos e entrar em contato com o proprietário do site.
 
@@ -7,7 +7,7 @@ Uma Landing Page focada na apresentação de serviços de Advocacia, permitindo 
 
 1. Clone este repositório:
 ```
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/Cesar-Klemes/vb-advocacia/tree/master
 ```
 
 2. Navegue até o diretório do projeto:
