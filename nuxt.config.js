@@ -3,8 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - vb-advogados',
-    title: 'vb-advogados',
+    title: 'VB Advogados',
     htmlAttrs: {
       lang: 'en'
     },
