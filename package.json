@@ -23,6 +23,7 @@
     "@nuxt/types": "~2.17.0",
     "@nuxtjs/robots": "^5.7.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/vercel-builder": "^0.25.0",
     "@nuxtjs/vuetify": "^1.12.3"
   }
 }
