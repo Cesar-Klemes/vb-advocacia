@@ -1,35 +1,75 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from "vuetify/es5/util/colors";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'VB Advogados',
+    title: "VB Advogados",
+    titleTemplate: "%s | VB Advogados",
     htmlAttrs: {
-      lang: 'en'
+      lang: { lang: "pt-BR" },
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Escritório especializado em Direito Bancário, com atuação em todo o Brasil (presencial e online), focado em ações revisionais de empréstimos e financiamentos, combate a juros abusivos e responsabilização por fraudes bancárias. Atendimento personalizado, equipe experiente e excelência comprovada com nota 5 no Google.",
+      },
+      { hid: "robots", name: "robots", content: "index,follow" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "VB Advogados",
+      },
+      { hid: "og:title", property: "og:title", content: "VB Advogados" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Escritório especializado em Direito Bancário, com atuação em todo o Brasil (presencial e online), focado em ações revisionais de empréstimos e financiamentos, combate a juros abusivos e responsabilização por fraudes bancárias. Atendimento personalizado, equipe experiente e excelência comprovada com nota 5 no Google.",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://SEU-DOMINIO.com/og.png",
+      },
+      { hid: "og:url", property: "og:url", content: "https://SEU-DOMINIO.com" },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      { hid: "twitter:title", name: "twitter:title", content: "VB Advogados" },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content:
+          "Escritório especializado em Direito Bancário, com atuação em todo o Brasil (presencial e online), focado em ações revisionais de empréstimos e financiamentos, combate a juros abusivos e responsabilização por fraudes bancárias. Atendimento personalizado, equipe experiente e excelência comprovada com nota 5 no Google.",
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "https://SEU-DOMINIO.com/og.png",
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { hid: "canonical", rel: "canonical", href: "https://SEU-DOMINIO.com" },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    'aos/dist/aos.css'
-  ],
+  css: ["aos/dist/aos.css"],
 
   server: {
-    host: '0.0.0.0'
+    host: "0.0.0.0",
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -37,24 +77,32 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    "@nuxtjs/vuetify",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
+    "@nuxtjs/sitemap",
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: "/",
+  },
+
+  sitemap: {
+    hostname: "https://SEU-DOMINIO.com",
+    gzip: true,
+    trailingSlash: true,
+    routes: ["/"],
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ["~/assets/variables.scss"],
     theme: {
       dark: true,
       themes: {
@@ -65,13 +113,12 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+        },
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
-}
+  build: {},
+};

@@ -5,21 +5,39 @@
         <!-- Cabeçalho -->
         <section id="inicio">
           <header class="header-fullscreen text-center">
-            <v-card class="d-flex justify-center align-center flex-column" min-height="300px" style="background-color: rgba(12, 44, 67, 0.7); width: 100%;">
-              <v-img class="mt-4 responsive-image" contain src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"/>
+            <v-card
+              class="d-flex justify-center align-center flex-column"
+              min-height="300px"
+              style="background-color: rgba(12, 44, 67, 0.7); width: 100%"
+            >
+              <v-img
+                class="mt-4 responsive-image"
+                contain
+                src="https://raw.githubusercontent.com/Cesar-Klemes/vb-advocacia/master/assets/img/logo-sem-fundo.png"
+              />
               <div class="mx-2">
-                <h3 class="my-5">Advogados experientes, soluções confiáveis.</h3>
+                <h3 class="my-5">
+                  Advogados experientes, soluções confiáveis.
+                </h3>
               </div>
             </v-card>
           </header>
         </section>
       </v-container>
 
-      <v-container fluid style="background-color: white; color: black; border-top-left-radius: 20px; border-top-right-radius: 20px">
+      <v-container
+        fluid
+        style="
+          background-color: white;
+          color: black;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        "
+      >
         <v-container>
           <!-- Sobre nós -->
           <section v-aos="'fade-up'" class="my-10" id="sobre">
-            <Sobre/>
+            <Sobre />
           </section>
         </v-container>
       </v-container>
@@ -28,7 +46,7 @@
         <v-container>
           <!-- Serviços -->
           <section v-aos="'fade-up'" class="my-10" id="servicos">
-            <Servicos/>
+            <Servicos />
           </section>
         </v-container>
       </v-container>
@@ -37,21 +55,29 @@
         <v-container>
           <!-- Perguntas Frequentes -->
           <section v-aos="'fade-up'" class="my-10" id="perguntas">
-            <Perguntas/>
+            <Perguntas />
           </section>
         </v-container>
       </v-container>
 
-      <v-container fluid style="background-color: #0c2c43; color: black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px">
+      <v-container
+        fluid
+        style="
+          background-color: #0c2c43;
+          color: black;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        "
+      >
         <v-container>
           <!-- Contatos -->
           <section v-aos="'fade-up'" class="my-10" id="depoimentos">
             <v-row align="stretch">
               <v-col cols="12" md="4" class="d-flex">
-                <Informacoes/>
+                <Informacoes />
               </v-col>
               <v-col>
-                <Depoimentos/>
+                <Depoimentos />
               </v-col>
             </v-row>
           </section>
@@ -59,45 +85,44 @@
       </v-container>
     </v-container>
 
-    <Whatsapp/>
+    <Whatsapp />
 
     <!-- Rodapé -->
-    <v-footer class="ma-0 pa-0" style="width: 100%; background-color: #212121;">
+    <v-footer class="ma-0 pa-0" style="width: 100%; background-color: #212121">
       <v-container class="mt-4">
-        <Footer/>
+        <Footer />
       </v-container>
     </v-footer>
   </div>
-
 </template>
 
 <script>
-import Sobre from '~/components/Sobre.vue'
-import Perguntas from '~/components/Perguntas.vue'
-import Informacoes from '~/components/Informacoes.vue'
-import Footer from "~/components/Footer.vue"
-import Whatsapp from "~/components/Whatsapp.vue"
-import Servicos from "~/components/Servicos.vue"
-import Depoimentos from "~/components/Depoimentos.vue"
+import Sobre from "~/components/Sobre.vue";
+import Perguntas from "~/components/Perguntas.vue";
+import Informacoes from "~/components/Informacoes.vue";
+import Footer from "~/components/Footer.vue";
+import Whatsapp from "~/components/Whatsapp.vue";
+import Servicos from "~/components/Servicos.vue";
+import Depoimentos from "~/components/Depoimentos.vue";
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import VueMask from 'v-mask'
-import Vue from "vue"
-Vue.use(VueMask)
+import AOS from "aos";
+import "aos/dist/aos.css";
+import VueMask from "v-mask";
+import Vue from "vue";
+Vue.use(VueMask);
 
 export default {
   mounted() {
     this.$nextTick(() => {
       AOS.init({
-        duration: 1200
-      })
+        duration: 1200,
+      });
     });
   },
   directives: {
     aos(el, binding) {
-      el.setAttribute('data-aos', binding.value)
-    }
+      el.setAttribute("data-aos", binding.value);
+    },
   },
   components: {
     Sobre,
@@ -106,13 +131,13 @@ export default {
     Footer,
     Whatsapp,
     Servicos,
-    Depoimentos
-  }
-}
+    Depoimentos,
+  },
+};
 </script>
 <style>
 .container-background {
-  background-image: url('https://rodrigocosta.com/wp-content/uploads/2021/09/areas-de-atuacao.png');
+  background-image: url("https://rodrigocosta.com/wp-content/uploads/2021/09/areas-de-atuacao.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -172,7 +197,7 @@ export default {
 /* Estilo para a barra de rolagem em si */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* Estilo para a "pegada" ou "handle" da barra de rolagem */
@@ -190,7 +215,7 @@ export default {
 /* Estilo para a "trilha" ou "track" da barra de rolagem */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* Estilo padrão para desktop */
@@ -212,8 +237,7 @@ export default {
 }
 
 .map-link:hover {
-  color: #007BFF !important;
+  color: #007bff !important;
   text-decoration: underline;
 }
 </style>
-
